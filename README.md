@@ -2,6 +2,10 @@
 
 Bienvenue sur **Personal Radio** – une plateforme élégante et intuitive pour écouter vos musiques locales ! Ce projet a été développé avec passion par **Merlin's Code** pour offrir une expérience moderne et personnalisable. 🚀
 
+## 🌐 **Live Preview**  
+Vous pouvez tester le projet en direct en suivant ce lien :  
+[**Live Preview**](https://radio.merlincode.fr) 🎧
+
 ## 🌟 **À propos du projet**  
 **Personal Radio** vous permet de créer votre propre lecteur radio avec une interface minimaliste et élégante, inspirée par NTS Radio. Ce projet est entièrement conçu avec des technologies natives : **HTML**, **CSS** et **JavaScript**, sans l'utilisation de frameworks ou bibliothèques supplémentaires. Cela garantit une expérience légère, rapide et entièrement personnalisable. ⚡
 
