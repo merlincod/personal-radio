@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Radio</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i data-lucide="radio"></i>
+                <h1>Ma Radio</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="grid">
+                <div class="left-column">
+                    <div class="now-playing">
+                        <h2>En direct</h2>
+                        <div class="current-track">
+                            <div id="current-track-title" class="track-title">Sélectionnez une piste pour commencer</div>
+                            <div id="current-track-artist" class="track-artist"></div>
+                        </div>
+                    </div>
+
+                    <div class="playlist">
+                        <h2>Playlist</h2>
+                        <div id="tracks-container"></div>
+                    </div>
+                </div>
+
+                <div class="about">
+                    <h2>À propos</h2>
+                    <p>
+                        <strong>Bienvenue sur votre lecteur radio personnalisé !</strong> 
+                        Ce projet, développé avec passion par <span style="color: var(--color-primary);">Merlin's Code</span>, vous offre une plateforme élégante et intuitive pour écouter vos musiques locales avec un style moderne et personnalisable.
+                    </p>
+                    <p>
+                        Ce lecteur radio est conçu entièrement avec des technologies natives : <strong>HTML</strong>, <strong>CSS</strong>, et <strong>JavaScript</strong>, sans frameworks ni bibliothèques supplémentaires, pour garantir une expérience légère et entièrement personnalisable.
+                    </p>
+                    <p>
+                        <strong>Stacks utilisées :</strong>
+                        <ul>
+                            <li>Frontend : HTML, CSS (responsive, animations), JavaScript natif (ES6+)</li>
+                            <li>Backend : Node.js, Express.js pour la gestion des fichiers audio</li>
+                            <li>Modules : <code>music-metadata</code> pour extraire les métadonnées MP3</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>Fonctionnalités principales :</strong>
+                        <ul>
+                            <li>Lecture et gestion de fichiers MP3 locaux</li>
+                            <li>Interface minimaliste inspirée par NTS Radio</li>
+                            <li>Visualisation des métadonnées : titre, artiste, album, durée</li>
+                            <li>Contrôles modernes : lecture, pause, shuffle, repeat, volume</li>
+                            <li>Adaptabilité mobile et desktop</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Ce projet est une démonstration des possibilités offertes par les technologies web natives. N'hésitez pas à personnaliser ou améliorer cette plateforme selon vos besoins !
+                    </p>
+                </div>
+                
+            </div>
+        </main>
+
+        <div class="player">
+            <div class="controls">
+                <button id="prev-btn" class="control-btn">
+                    <i data-lucide="skip-back"></i>
+                </button>
+                <button id="play-btn" class="control-btn primary">
+                    <i data-lucide="play"></i>
+                </button>
+                <button id="next-btn" class="control-btn">
+                    <i data-lucide="skip-forward"></i>
+                </button>
+            </div>
+
+            <div class="progress-container">
+                <div class="track-info">
+                    <span id="time-display">0:00 / 0:00</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="global-progress-bar">
+                <div class="global-progress"></div>
+            </div>
+
+            <div class="extra-controls">
+                <button id="shuffle-btn" class="control-btn">
+                    <i data-lucide="shuffle"></i>
+                </button>
+                <button id="repeat-btn" class="control-btn">
+                    <i data-lucide="repeat"></i>
+                </button>
+                <div class="volume-control">
+                    <i data-lucide="volume-2"></i>
+                    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+    </div>
+<link rel="stylesheet" href="css/styles.css">
+    <audio id="audio-player"></audio>
+    <script src="/js/script.js"></script>>
+</body>
+</html>
